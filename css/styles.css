@@ -1,0 +1,78 @@
+/* colors
+background #17171C
+white #FFFFFF
+button DarkGrey #2E2F38
+button LightGrey #4E505F
+button blue #4B5EFC
+*/
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+.calcBoard {
+    
+    margin: 50px auto;
+    width: 364px;
+    height: 582px;
+    background: #17171C;
+    color: white;
+    font-family: Helvetica;
+    padding: 18px;
+}
+
+.buttons {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+    
+}
+
+.button {
+    
+    width: 69px;
+    height: 72px;
+    border-radius: 24px;
+    border: none;
+    background-color: #2e2f38;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    padding: 12px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    
+}
+
+.calcDisplay {
+    margin-bottom: 16px;
+  text-align: right;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.button:hover {
+    filter: brightness(120%);
+}
+
+.button:active {
+    filter: brightness(90%);
+}
+
+.button.bg_blue {
+    background: #4B5EFC;
+}
+
+.button.zero {
+    width: 238px;
+}
+
+.button.C {
+    width: 153px;
+}
